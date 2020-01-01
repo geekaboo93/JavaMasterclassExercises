@@ -22,5 +22,19 @@ public class Main {
         System.out.println("teen= " + person.isTeen());
         person.setLastName("Smith");    // lastName is set to Smith
         System.out.println("fullName= " + person.getFullName());
+
+        BankAccountChallenge myAccount =  new BankAccountChallenge();
+        myAccount.setAccountNumber("1234456774");
+        myAccount.setBalance(8888.88);
+        myAccount.setName("KHY");
+        myAccount.setEmail("test@whatever.com");
+        myAccount.setPhoneNumber("0122353443");
+        System.out.println(myAccount.getAccountNumber());
+        System.out.println(myAccount.getBalance());
+        System.out.println(myAccount.getName());
+        System.out.println(myAccount.getEmail());
+        System.out.println(myAccount.getPhoneNumber());
+        myAccount.deposit(18.8);
+        myAccount.withdraw(88.8);
     }
 }
