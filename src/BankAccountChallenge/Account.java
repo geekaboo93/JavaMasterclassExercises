@@ -1,9 +1,30 @@
-public class BankAccountChallenge {
+package BankAccountChallenge;
+
+public class Account {
     private String accountNumber;
     private double balance;
     private String name;
     private String email;
     private String phoneNumber;
+
+    // Default setter
+    public Account() {
+        this("xxxxxxxxxx",0.00,"BankAccountChallenge.Account holder's name", "BankAccountChallenge.Account holder's email","BankAccountChallenge.Account holder's phone number");
+        System.out.println("Empty constructor called");
+    }
+    public Account(String accountNumber, double balance, String name, String email, String phoneNumber) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.name = name;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public Account(String name, String email, String phoneNumber) {
+        this.name = name;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
 
     public String getAccountNumber() {
         return accountNumber;
